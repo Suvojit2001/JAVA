@@ -15,15 +15,15 @@ public class lec_24_break {
         //continue
 
 
-//        int i = 0;
-//        do {
-//            i++;
-//            if (i==2){
-//                System.out.println("ending the loop");
-//                continue;
-//            }
-//            System.out.println(i);
-//            System.out.println("Java is great");
-//        }while(i<5);
+        int i = 0;
+        do {
+            i++;
+            if (i==2){
+                System.out.println("ending the loop");
+                continue;
+            }
+            System.out.println(i);
+            System.out.println("Java is great");
+        }while(i<5);
     }
 }

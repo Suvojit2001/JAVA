@@ -3,13 +3,13 @@ public class practice_set5 {
     public static void main(String[] args) {
         //question1                   pattern printing
 
-        int n = 4;
-        for (int i = n; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                System.out.print("*");
-            }
-            System.out.print("\n");
-        }
+//        int n = 4;
+//        for (int i = n; i > 0; i--) {
+//            for (int j = 0; j < i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.print("\n");
+//        }
 
 
         //question2            sum of 1st n even number
@@ -67,7 +67,7 @@ public class practice_set5 {
         for (int i=1;i<=10;i++) {
             System.out.printf("%d  X   %d  = %d", n, i, n * i);
             sum = sum + (n * i);
-            System.out.println();
+            System.out.println("");
         }
         System.out.println(sum);                                      */
 

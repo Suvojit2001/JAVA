@@ -9,7 +9,7 @@ public class lec_28_multidim_array {
         flats[1][0]= 104;
         flats[1][1]= 105;
         flats[1][2]= 106;
-
+        System.out.println(flats.length);
 //        System.out.println(flats.length);
 
         for(int i =0;i< flats.length;i++) {

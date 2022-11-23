@@ -11,9 +11,7 @@ public class lec_26 {
 
 /*
             int [] marks = {100,89,77,64,21};
-            for (int i =0;i<5;i++) {
-                System.out.println("you have entered " + marks[i]);
-            }
+
                                                                            */
 
     }
