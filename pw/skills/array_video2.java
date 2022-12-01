@@ -31,7 +31,7 @@ public class array_video2 {
         printArray(arr_2);          */
 
         int [] arr_2 = arr.clone();    //*********************************imp
-            printArray(arr_2);
+        printArray(arr_2);
         arr_2[0]=0;
         arr_2[1]=0;
         System.out.println("original array after changing copied array");

@@ -28,7 +28,7 @@ public class array_video2_question {
         int count =0;
         for(int i=0;i<arr.length;i++){
             if (arr[i]==x){
-                count = count +1;
+                count ++;
             }
         }
         System.out.println("The number of occurrences of " + x + " is : " +count);
