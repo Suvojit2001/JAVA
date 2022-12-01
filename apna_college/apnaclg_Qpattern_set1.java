@@ -1,3 +1,5 @@
+package apna_college;
+import java.util.Scanner;
 public class apnaclg_Qpattern_set1 {
     public static void main(String[] args) {
 // print  inverted half pyramid (rotated by 180 deg)
@@ -65,4 +67,5 @@ public class apnaclg_Qpattern_set1 {
 
 
     }
+
 }

@@ -1,4 +1,7 @@
+package apna_college;
+
 import java.util.Scanner;
+
 public class apnaclg_Qpattern_set2 {
 
     public static void main(String[] args) {
@@ -19,16 +22,15 @@ public class apnaclg_Qpattern_set2 {
 
         //calculate greatest common divisor of 2 numbers.
         Scanner sc = new Scanner(System.in);
-        int n1 =sc.nextInt();
-        int n2 =sc.nextInt();
-        while (n1!=n2){
-            if (n1>n2){
-                n1=n1-n2;
-            }
-            else {
-                n2=n2-n1;
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        while (n1 != n2) {
+            if (n1 > n2) {
+                n1 = n1 - n2;
+            } else {
+                n2 = n2 - n1;
             }
         }
-        System.out.println("Gcd is "+ n2);
+        System.out.println("Gcd is " + n2);
     }
 }

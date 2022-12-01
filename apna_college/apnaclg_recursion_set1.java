@@ -1,3 +1,5 @@
+package apna_college;
+
 public class apnaclg_recursion_set1 {
 /* Question1
 public static void printnumb(int n){
