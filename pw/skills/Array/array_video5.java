@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 
 public class array_video5 {
     static void swapInArray(int [] arr,int i,int j){

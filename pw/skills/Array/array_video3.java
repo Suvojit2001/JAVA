@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 public class array_video3 {
     //Q2) Find the total number of triplets in the array whose sum is equal to the given value of x
     static int sumTriplets(int [] arr , int target){

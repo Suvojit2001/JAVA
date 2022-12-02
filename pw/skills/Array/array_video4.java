@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 import java.util.Scanner;
 public class array_video4 {
 //Q1) Given 2 integers a and b. swap the 2given values using temporary variable.

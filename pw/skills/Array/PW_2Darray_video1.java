@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 import java.util.Scanner;
 public class PW_2Darray_video1 {
     static void printArray(int [][] arr){

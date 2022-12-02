@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 public class array_video1 {
     public static void main(String[] args) {
    //Q1)  Calculate the maximum value out of all the elements in the array

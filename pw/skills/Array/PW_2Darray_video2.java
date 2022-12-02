@@ -1,9 +1,9 @@
-package pw.skills;
+package pw.skills.Array;
 import java.util.Scanner;
 public class PW_2Darray_video2 {
     static void printArray(int [][] arr){
         for(int i= 0; i<arr.length;i++){
-            for (int j= 0;j<arr[0].length;j++){
+            for (int j= 0;j<arr[i].length;j++){
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
@@ -72,7 +72,7 @@ public class PW_2Darray_video2 {
 
     public static void main(String[] args) {
          Scanner sc = new Scanner(System.in);
-        System.out.println("Enter row number");
+/*        System.out.println("Enter row number");
         int r =sc.nextInt();
         System.out.println("Enter column number");
         int c= sc.nextInt();
@@ -91,14 +91,14 @@ public class PW_2Darray_video2 {
         transposeInPlace(arr,r,c);                //inplace transpose
 
 //Q2) Given a square matrix ,turn it by 90 degree in a clockwise direction without using extra space
-        rotateMatrix(arr,r);
+        rotateMatrix(arr,r);                                                            */
 
 //Q3) Given an integer n return the 1st n rows of pascal's triangle.
             int n= sc.nextInt();
             int [][] ans = new int [n][];
             ans= pascal(n);
             for (int i=0;i<n;i++){
-                for (int j=0;j<i+1;j++){
+                for (int j=0;j<ans[i].length;j++){
                     System.out.print(ans[i][j]);
                 }
                 System.out.println();

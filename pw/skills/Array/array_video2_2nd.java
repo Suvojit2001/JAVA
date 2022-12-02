@@ -1,4 +1,4 @@
-package pw.skills;
+package pw.skills.Array;
 import java.util.Arrays;
 public class array_video2_2nd {
     static void printArray(int [] arr){
