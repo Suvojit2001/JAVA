@@ -23,13 +23,14 @@ public class PW_2Darray_video4 {
 
 
 //Second Approach
-    static void findPrefixSunMatrix(int [][] matrix){
-        for (int i=0;i<matrix.length;i++){
-            for (int j=1;j<matrix[i].length;j++){
-                matrix[i][j] =matrix[i][j] + matrix[i][j-1];
-            }
+static void findPrefixSunMatrix(int [][] matrix){
+    for (int i=0;i<matrix.length;i++){
+        for (int j=1;j<matrix[i].length;j++){
+            matrix[i][j] =matrix[i][j] + matrix[i][j-1];
         }
     }
+
+}
     static int findSum2(int [] [] matrix ,int l1,int r1,int l2,int r2){
         int sum=0;
         findPrefixSunMatrix(matrix);
@@ -43,6 +44,39 @@ public class PW_2Darray_video4 {
         }
         return sum;
 }
+
+//Third Approach
+
+    static void findRowAndColumnSum(int [][] matrix){
+        for (int i=0;i<matrix.length;i++){
+            for (int j=1;j<matrix[i].length;j++){
+                matrix[i][j] =matrix[i][j] + matrix[i][j-1];
+            }
+        }
+        for (int j=0;j<matrix[0].length;j++){
+            for (int i=1;i<matrix.length;i++){
+                matrix[i][j] =matrix[i][j] + matrix[i-1][j];
+            }
+        }
+    }
+    static int findSum3(int [] [] matrix ,int l1,int r1,int l2,int r2){
+        int ans= 0;
+        int sum1=0,left=0,up=0,leftUp=0;
+        findRowAndColumnSum(matrix);
+        //Row wise and Column Wise Sum Matrix
+        sum1=matrix[l2][r2];
+            if(r1>=1){
+                 left=matrix[l2][r1-1];
+            }
+             if(l1>=1){
+                 up=matrix[l1-1][r2];
+            }
+            if(l1>=1 && r1>=1){
+                leftUp=matrix[l1-1][r1-1];
+            }
+        ans= sum1 -left -up + leftUp;
+        return ans;
+    }
 
 
 
@@ -69,7 +103,12 @@ public class PW_2Darray_video4 {
         int a =findSum(arr,l1,r1,l2,r2);
         System.out.println("using 1st process the sum is : "+a);
 //Second Approach
-        int b =findSum2(arr,l1,r1,l2,r2);
-        System.out.println("using 2nd process the sum is : "+b);
+//        int b =findSum2(arr,l1,r1,l2,r2);
+
+//        System.out.println("using 2nd process the sum is : "+b);
+
+//Third Approach
+        int d =findSum3(arr,l1,r1,l2,r2);
+        System.out.println("using 3nd process the sum is : "+d);
     }
 }
