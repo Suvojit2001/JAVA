@@ -1,5 +1,5 @@
 package TataStrive.Classwork;
-
+import java.util.Scanner;
 import javax.sound.midi.Soundbank;
 
 class Employee1
@@ -14,6 +14,7 @@ class Employee1
         this.name=name;
         this.city=city;
     }
+
     public Employee1(int id, String name,String city,String country,String state)
     {
         this(id,name,city);

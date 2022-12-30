@@ -33,11 +33,14 @@ public class lec_45 {
     public static void main(String[] args) {
         base b =new base();
 //        derived b =new derived();       //In Both Cases the output will be same
+
         b.setX(5);
         System.out.println(b.getX());
 
-        derived d =new derived();            //derived can access base but base cannot access derived
+        derived d =new derived();         //derived can access base but base cannot access derived
         d.setY(45);
+        d.setX(55);
+        System.out.println(d.getX());
         System.out.println(d.getY());
 
     }
