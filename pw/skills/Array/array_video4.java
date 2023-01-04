@@ -1,7 +1,7 @@
 package pw.skills.Array;
 import java.util.Scanner;
 public class array_video4 {
-//Q1) Given 2 integers a and b. swap the 2given values using temporary variable.
+//Q1) Given 2 integers a and b. swap the 2 given values using temporary variable.
     static  void swap(int a,int b){
         System.out.printf("Original value before swap %d , %d \n" ,a,b);
         int c =b;
